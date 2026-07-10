@@ -22,19 +22,19 @@
         function handleSubmit(event) {
             event.preventDefault();
             
-            // Lấy giá trị từ input
+           
             const start = parseInt(document.getElementById("soDau").value);
             const end = parseInt(document.getElementById("soCuoi").value);
             let tong = 0;
 
-            // Vòng lặp tính tổng
+         
             for (let i = start; i <= end; i++) {
                 if (i % 3 === 0) {
                     tong += i;
                 }
             }
 
-            // Hiển thị kết quả
+           
             document.getElementById("ketQua").innerText = "Tổng các số chia hết cho 3 từ " + start + " đến " + end + " là: " + tong;
             console.log("Tổng là: " + tong);
         }
